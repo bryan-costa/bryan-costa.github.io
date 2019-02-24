@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+#Background{
+  background-color: #dddddd; 
+}
+#nav-mobile{
+    color: #5a5656;
+    /* margin-left: 10rem; */
+    margin-right: 10%;
+    position: relative;
+}
+#nav ul li a{
+    color: grey;
+  }   
+#brand-logo{
+    background-color: #4aaaa5;
+    margin-left: 12%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#container{
+  background-color: #ffffff;
+  display: grid;
+  height: 25%;
+  width: 76%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 40px
+}
+h4{
+  color: #4aaaa5;
+  grid-area: 1 / 1 / span 1 / span 2;
+  border-bottom: 2px solid #dddddd;
+  padding: 1%
+}
+#colorBox{
+    background: #4aaaa5;
+    width: 100%;
+    height: 10px;
+    margin-top: 10rem;
+}
+.footer{
+    position: sticky
+    text-align: center;
+    font-size: 10pt;
+    background-color: #666666;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+/* I used Materialize on my original project therefore my header max-width has to be 992px */
+@media only screen and (max-width: 992px) and (min-width: 768px){
+    .brand-logo {
+      left: 9% !important;
+    }
+    #nav-mobile{
+      display: block !important;
+        }  
+  }
+  /* Tablet Screen */
+  @media only screen and (max-width: 768px) and (min-width: 640px){
+    .brand-logo {
+      left: 12% !important;
+    }
+    #nav-mobile{
+      display: block !important;
+        }  
+  }
+  /* Phone */
+  @media only screen and (max-width: 640px) {
+    .brand-logo {
+      left: 12% !important;
+    }
+    #nav-mobile{
+      display: block !important;
+        }  
+  }
